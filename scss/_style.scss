@@ -46,6 +46,85 @@ section.services {
     }
 }
 
+section.customers {
+    .cta {
+        .card-body:before {
+            content: '';
+            position: absolute;
+            left: 5px;
+            height: 100%;
+            top: 0;
+            width: 10px;
+            transform: skew(347deg);
+            background: $secondary;
+        }
+
+        span.position-relative {
+            &:before {
+                content: '';
+                position: absolute;
+                left: -10px;
+                height: 100%;
+                top: 0;
+                width: 10px;
+                background: linear-gradient(to left top, $primary 50%, transparent 50%);
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                right: -10px;
+                height: 100%;
+                top: 0;
+                width: 10px;
+                background: linear-gradient(to right bottom, $primary 50%, transparent 50%);
+            }
+        }
+    }
+
+    .reviews {
+        .review {
+            &:before {
+                content: '';
+                height: 100%;
+                width: 100%;
+                transform: skew(347deg);
+                position: absolute;
+                left: -37%;
+            }
+
+            &.left:before {
+                background-color: $primary;
+            }
+
+            &.right:before {
+                background-color: $secondary;
+            }
+        }
+    }
+
+    .crow {
+        height: 52rem;
+    }
+}
+
+section.testimonials {
+    margin-top: -24rem;
+    margin-bottom: 166px;
+    
+    .slick-slide {
+        .card-o {
+            min-height: 480px;
+
+            .badge {
+                width: 40px;
+                height: 40px;
+                line-height: 1.2;
+            }
+        }
+    }
+}
+
 section.deals {
     background: $secondary;
     border-radius: 46px;

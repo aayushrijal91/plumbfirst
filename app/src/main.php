@@ -121,6 +121,126 @@
     </div>
 </section>
 
+<section class="customers pt-5 position-relative mt-xxl-5 overflow-hidden">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-xxl-9">
+                <div class="row justify-content-between crow">
+                    <div class="col-lg-5">
+                        <h3 class="text-dark fs-72 fw-700 lh-1 mb-5">4500+ loved their plumbfirst experience</h3>
+                        <div class="cta card rounded-0 border-0 mb-5 bg-transparent ">
+                            <div class="card-body p-0 position-relative">
+                                <span class="fw-700 fs-36 lh-1 bg-primary text-white d-inline-block py-1 ms-4 ps-2 pe-3 position-relative"><?= date('Y') ?> Product Review Winner</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-auto text-white">
+                        <div class="d-flex reviews h-100 cover">
+                            <div class="me-2 left position-relative review">
+                                <div class="position-relative z-1 p-4">
+                                    <?= renderImg("cpr1.png", 'lib', 'mb-5') ?>
+                                    <div class="ms-n4">
+                                        <div class="d-flex align-items-center">
+                                            <p class="fs-96 fw-700 lh-1 mb-0">4.5</p>
+                                            <svg width="82" height="65" viewBox="0 0 82 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M21.5275 0.633545H81.5275L60.3335 64.6335H0.333496L21.5275 0.633545Z" fill="#F05325" />
+                                                <path d="M44.9903 27.4685L40.453 14.0066L35.9157 27.4685H22.3037L33.3974 36.44L29.0371 50.3051L40.453 41.7367L51.8688 50.3051L47.5085 36.44L58.6022 27.4685H44.9903Z" fill="white" />
+                                            </svg>
+                                        </div>
+                                        <p class="h4 fw-normal">Customer Rating</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right position-relative review">
+                                <div class="position-relative z-1 p-4">
+                                    <?= renderImg("cpr2.png", 'lib', 'mb-5') ?>
+                                    <div class="ms-n4">
+                                        <p class="fs-96 lh-1 fw-700 mb-0"><?= $reviewn ?></p>
+                                        <p class="h4 fw-normal">Client Reviews</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials">
+    <div class="container-fluid px-0">
+        <div class="slidert">
+            <?php $testi = [
+                [
+                    'name' => 'Randy',
+                    'heading' => 'Perfect plumbing job',
+                    'content' => 'Had a burst waterline called plumbfirst came on time explained the problem and what had to be done. Tristan did a perfect job was very polite under trying conditions thanks.',
+                ],
+                [
+                    'name' => 'Phil',
+                    'heading' => 'Gas Line replacement',
+                    'content' => 'Alex K and his crew were on time, accurate and their attention to detail was strong. Wouldn’t hesitate to use Plumb a first again.<br>Albeit they’re not the cheapest, definitely trustworthy and you’ll know the job will be done to the highest quality.',
+                ],
+                [
+                    'name' => 'Kevin',
+                    'heading' => 'Excellent',
+                    'content' => 'Dear Sir/Madam <br>Liam did a terrific job installing two cisterns and new pipes for the bathroom. He was cordial and polite on arrival and throughout the day, and I would not hesitate to recommend to friends, family and even enemies! Regards Satisfied Customer',
+                ],
+                [
+                    'name' => 'Missy',
+                    'heading' => 'Hot water system installed - Thanks Tai',
+                    'content' => 'Tai finalised the installation of the new hot water system this morning. Clearly explained the duration of the work, professionally installed the system, and communicated with the team to follow up a few points to be followed up. Thanks!',
+                ],
+                [
+                    'name' => 'Qball R.',
+                    'heading' => 'Kitchen sink & water mains fixed quick. Thanks Blaine',
+                    'content' => "After the first tradesman was not able to make it they sent out a second. He called to let us know what time he would be here and was spot on time. Blaine was very professional and quick having it all sorted in just over an hour. His attitude was great and I'd recommend him for anyone wanting the job done quickly and professionally.",
+                ],
+                [
+                    'name' => 'Randy',
+                    'heading' => 'Perfect plumbing job',
+                    'content' => 'Had a burst waterline called plumbfirst came on time explained the problem and what had to be done. Tristan did a perfect job was very polite under trying conditions thanks.',
+                ],
+            ];
+            $n = 0;
+            foreach ($testi as $key => $value) {
+                $n++;
+            ?>
+                <div>
+                    <div class="<?= ($n % 2 ? 'mt-md-5 pt-md-5' : '') ?>">
+                        <div class="card-o card rounded-0 mx-2 ">
+                            <div class="card-header bg-white p-3">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <?php
+                                    $ti = dirname(dirname(__FILE__));
+                                    if (file_exists($ti . "/assets/images/lib/t" . $n . ".png")) {
+                                        echo renderImg("t$n.png", 'lib', 'me-2');
+                                    } else {
+                                    ?>
+                                        <p class="mb-0 h3 me-2"><span class="badge rounded-circle bg-primary text-white"><?= $value['name'][0] ?></span></p>
+                                    <?php
+                                    }
+                                    ?>
+                                    <p class="mb-0 h5 text-dark"><?= $value['name'] ?></p>
+                                </div>
+                            </div>
+                            <div class="card-body p-4">
+                                <div class="fw-700 fs-14 text-tertiary text-center">User Score</div>
+                                <div class="d-flex justify-content-center pt-2 pb-4"><?= renderImg("tstars.png", "icons") ?></div>
+                                <div class="text-dark fs-24 text-center mb-4 fw-700">“<?= $value['heading'] ?>”</div>
+                                <div class="font-roboto text-tertiary"><?= $value['content'] ?></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php
+            }
+            ?>
+        </div>
+    </div>
+</section>
+
 <div class="container-fluid">
     <section class="deals">
         <div class="container">
@@ -290,12 +410,12 @@
                 </div>
             </div>
             <div class="row justify-content-center justify-content-md-between align-items-center">
-                <div class="col-auto">
-                    <span class="text-tertiary">Copyright <?= date('Y') ?></span>
+                <div class="col-auto font-roboto text-tertiary">
+                    <span>Copyright <?= date('Y') ?></span>
                     <span class="text-secondary px-xl-5">/</span>
-                    <span class="text-tertiary"><?= $site ?></span>
+                    <span><?= $site ?></span>
                     <span class="text-secondary px-xl-5">/</span>
-                    <span class="text-tertiary">All Rights Reserved</span>
+                    <span>All Rights Reserved</span>
                 </div>
                 <div class="col-auto d-none d-lg-block">
                     <a href="https://www.aiims.com.au/like-our-work/" target="_blank">

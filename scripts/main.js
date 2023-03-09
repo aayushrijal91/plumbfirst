@@ -10,6 +10,37 @@ document.querySelectorAll('a[href="#form"]').forEach(function (anchor) {
     });
 });
 
+$('.slidert').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    arrows: false,
+    centerMode: true,
+    centerPadding: "320px",
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [{
+        breakpoint: 1400,
+        settings: {
+            slidesToShow: 3,
+        }
+    },
+    {
+        breakpoint: 1200,
+        settings: {
+            slidesToShow: 2,
+        }
+    },
+    {
+        breakpoint: 768,
+        settings: {
+            slidesToShow: 1,
+            centerMode: false,
+        }
+    }]
+});
+
 function setTime() {
     const now = new Date();
 
