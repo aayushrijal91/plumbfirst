@@ -1,0 +1,76 @@
+@function imgUrl($file, $path: "background"){
+@return url("../images/" + $path + "/" + $file) no-repeat;
+}
+
+header {
+    padding: 39px 21px;
+}
+
+section.banner {
+    border-radius: 46px;
+    background: $primary imgUrl('van.png') left center;
+    padding: 123px 0 160px;
+    color: $white;
+    position: relative;
+    overflow: hidden;
+
+    .banner_guys {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+    }
+}
+
+section.services {
+    padding: 133px 0 85px;
+
+    .service_card {
+        background: $white;
+        border: 1.33333px solid $light;
+        border-radius: 15px;
+        padding: 25px 24px;
+        height: 100%;
+
+        img {
+            border-radius: 15px;
+            height: 248px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+section.deals {
+    background: $secondary;
+    border-radius: 46px;
+    color: $white;
+    padding: 150px 0 206px;
+
+    .deals_card {
+        border: 4px dashed #FFFFFF;
+        border-radius: 15px;
+        padding: 13px;
+
+        .card_inner {
+            background: $primary imgUrl('peeper.png') right center;
+            border-radius: 15px;
+            min-height: 353px;
+            display: flex;
+            flex-direction: column;
+
+            .top {
+                flex-grow: 1;
+            }
+        }
+    }
+}
+
+footer {
+    font-size: 0.875rem;
+    background-color: #221f1f;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 0.61rem;
+    }
+}

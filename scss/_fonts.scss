@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+$font-roboto: "Roboto", sans-serif;
+$font-coolvetica: "Coolvetica", sans-serif;
+$font-dmsans: 'DM Sans', sans-serif;
+
+$font-body: $font-coolvetica;
+
+$font-families: (
+    "roboto": "Roboto",
+    "coolvetica": "Coolvetica",
+    "dmsans": "DM Sans"
+);
+
+@each $name,
+$font-family in $font-families {
+    .font-#{$name} {
+        font-family: $font-family, sans-serif;
+    }
+}
+
+$asset-path: "../webfonts/";
+
+/* Fonts includer */
+@mixin font-face($font-family, $font-file, $weight: "normal", $style: "normal") {
+    @font-face {
+        font-family: $font-family;
+        src: local($font-file), url($asset-path + $font-file + ".woff") format("woff"),
+            url($asset-path + $font-file + ".woff2") format("woff2");
+        font-weight: $weight;
+        font-style: $style;
+    }
+}
+
+@include font-face("Coolvetica", "CoolveticaUl-Regular", 300);
+@include font-face("Coolvetica", "CoolveticaEl-Regular", 400);
+@include font-face("Coolvetica", "CoolveticaLt-Regular", 500);
+@include font-face("Coolvetica", "CoolveticaBk-Regular", 600);
+@include font-face("Coolvetica", "CoolveticaRg-Regular", 700);
+@include font-face("Coolvetica", "CoolveticaRg-Bold", 800);
+@include font-face("Coolvetica", "CoolveticaHv-Regular", 900);
