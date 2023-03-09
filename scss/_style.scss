@@ -3,7 +3,11 @@
 }
 
 header {
-    padding: 39px 21px;
+    padding: 69px 0 22px;
+
+    @include media-breakpoint-up(md) {
+        padding: 39px 21px;
+    }
 
     .logo {
         max-width: 270px;
@@ -12,18 +16,37 @@ header {
 }
 
 section.banner {
-    border-radius: 46px;
-    background: $primary imgUrl('van.png') left center;
-    padding: 123px 0 160px;
+    background: $primary;
+    border-radius: 25px;
     color: $white;
     position: relative;
     overflow: hidden;
+    padding: 30px 0;
+    
+    @include media-breakpoint-up(md) {
+        background: $primary imgUrl('van.png') left center;
+        border-radius: 46px;
+        padding: 123px 0 160px;
+    }
 
+    @include media-breakpoint-down(sm) {
+        .heading {
+            font-size: 40px !important;
+        }
+    }
+    
     .banner_guys {
         position: absolute;
         bottom: 0;
         right: 0;
         z-index: 1;
+    }
+
+    @include media-breakpoint-down(sm) {
+        .time_wrapper {
+            font-size: 16px !important;
+            font-weight: 300;
+        }
     }
 }
 

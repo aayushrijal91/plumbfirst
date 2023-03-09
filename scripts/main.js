@@ -57,7 +57,7 @@ function setTime() {
         hours = now.getHours();
     }
 
-    $('#time').text(hours + ':' + padZeroes(minutes) + ':' + padZeroes(seconds) + ' ' + period);
+    $('.time').text(hours + ':' + padZeroes(minutes) + ':' + padZeroes(seconds) + ' ' + period);
 
     function padZeroes(num) {
         return ('0' + num).slice(-2);

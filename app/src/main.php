@@ -1,13 +1,13 @@
 <header>
     <div class="container-fluid">
-        <div class="row justify-content-center justify-content-lg-between align-items-center">
-            <div class="col-auto">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-6 col-md-auto">
                 <a href="./">
                     <?= renderImg("logo.png", "logo", 'logo') ?>
                 </a>
             </div>
-            <div class="col-auto fs-20 font-roboto text-grey">Melbourne wide local and reliable Plumbing Services.</div>
-            <div class="col-auto">
+            <div class="col-auto fs-20 font-roboto text-grey d-none d-md-block">Melbourne wide local and reliable Plumbing Services.</div>
+            <div class="col-auto d-none d-md-block">
                 <a href="tel:<?= $phone_number ?>" class="btn btn-secondary rounded-0 text-white py-3 px-4 gap-1">
                     <div>
                         <div class="fs-20 fw-600 lh-0_8">24/7</div>
@@ -17,6 +17,17 @@
                     <div class="fs-20 fw-700"><?= $phone_number ?></div>
                 </a>
             </div>
+            <div class="col-auto d-md-none">
+                <div class="time_wrapper font-roboto lh-1 fw-500 row text-primary justify-content-center">
+                    <div class="col-auto position-relative">
+                        <div class="pulse pulsating-circle"></div>
+                    </div>
+                    <div class="col">
+                        <div class="time">3:39:40pm</div>
+                        <div class="">We're Open!</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </header>
@@ -24,16 +35,18 @@
 <div class="container-fluid">
     <section class="banner">
         <div class="container">
-            <div class="text-center pb-2">
+            <div class="text-center font-roboto text-primary-light fw-300 fs-14 pb-5 d-md-none">Melbourne wide local and reliable Plumbing Services.</div>
+            <div class="text-center pb-2 d-none d-md-block">
                 <?= renderImg('awards-banner.png', 'lib') ?>
             </div>
             <div class="row justify-content-center">
-                <div class="col-7">
-                    <h1 class="fs-96 lh-1 fw-700 text-center py-4">On-Time Plumbers or We Pay You $100!*</h1>
+                <div class="col-auto d-md-none"><?= renderImg('pr-sm.png', 'lib') ?></div>
+                <div class="col-md-7">
+                    <h1 class="heading fs-96 lh-1 fw-700 text-center py-3 py-md-4">On-Time Plumbers or We Pay You $100!*</h1>
                 </div>
                 <div class="col-12">
-                    <div class="time_wrapper font-roboto fs-24 pt-2 pb-7 row justify-content-center">
-                        <div class="col-auto"><span class="time" id="time">3:39:40pm</span></div>
+                    <div class="time_wrapper font-roboto fs-24 pt-2 pb-5 pb-md-7 row justify-content-center">
+                        <div class="col-auto"><span class="time">3:39:40pm</span></div>
                         <div class="col-auto">We're Open!</div>
                         <div class="col-auto position-relative">
                             <div class="pulse pulsating-circle"></div>
@@ -41,7 +54,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center gx-3">
+            <div class="d-md-none"><?= renderImg('van-sm.png', 'lib', 'w-100') ?></div>
+            <div class="row justify-content-center d-none d-md-flex gx-3">
                 <div class="col-auto">
                     <a href="#form" class="btn border btn-primary border-white rounded-0 text-white fs-18 px-6">Book Online</a>
                 </div>
@@ -57,7 +71,10 @@
                 </div>
             </div>
         </div>
-        <div class="banner_guys"><?= renderImg('banner-tradies.png', 'lib') ?></div>
+        <div class="banner_guys">
+            <?= renderImg('banner-tradies.png', 'lib',  'd-none d-md-block') ?>
+            <?= renderImg('banner-guy-sm.png', 'lib', 'd-md-none') ?>
+        </div>
     </section>
 </div>
 
