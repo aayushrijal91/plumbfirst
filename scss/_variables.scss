@@ -1,11 +1,11 @@
 $primary: #2E2D71;
 $secondary: #F05325;
+$tertiary: #818493;
 $grey: #64646b;
 $dark: #1E1E23;
 $black: #000000;
 $light: #D4D2E3;
 
-$tertiary: #ededed;
 $white: #ffffff;
 
 $theme-colors: (
@@ -26,8 +26,12 @@ $theme-colors: map-merge(("primary": $primary,
 $font-sizes: (
     96: 96px,
     86: 86px,
+    72: 72px,
+    64: 64px,
     48: 48px,
+    36: 36px,
     32: 32px,
+    30: 30px,
     27: 27px,
     24: 24px,
     22: 22px,

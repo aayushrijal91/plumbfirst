@@ -4,6 +4,11 @@
 
 header {
     padding: 39px 21px;
+
+    .logo {
+        max-width: 270px;
+        width: 100%;
+    }
 }
 
 section.banner {
@@ -51,11 +56,13 @@ section.deals {
         border: 4px dashed #FFFFFF;
         border-radius: 15px;
         padding: 13px;
+        height: 100%;
 
         .card_inner {
             background: $primary imgUrl('peeper.png') right center;
+            background-size: contain;
             border-radius: 15px;
-            min-height: 353px;
+            height: 100%;
             display: flex;
             flex-direction: column;
 
@@ -66,9 +73,42 @@ section.deals {
     }
 }
 
+section.brands {
+    padding: 146px 0 96px;
+
+    .brands_card {
+        padding: 18px 32px 60px;
+        background: $white;
+        border: 1px solid $light;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        height: 100%;
+        font-family: $font-roboto;
+    }
+}
+
 footer {
-    font-size: 0.875rem;
-    background-color: #221f1f;
+    border-radius: 46px;
+    background-color: $primary;
+    color: $white;
+    margin-bottom: 57px;
+
+    .logo {
+        max-width: 270px;
+    }
+
+    .btn {
+        height: 91px;
+    }
+
+    .accreditation {
+        background: rgba(36, 36, 41, 0.26);
+        padding: 32px 0;
+    }
 
     @include media-breakpoint-down(sm) {
         font-size: 0.61rem;
