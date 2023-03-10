@@ -1,5 +1,35 @@
-@function imgUrl($file, $path: "background"){
-@return url("../images/" + $path + "/" + $file) no-repeat;
+.animated-call-button {
+    @keyframes shake {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        20% {
+            transform: rotate(10deg);
+        }
+
+        40% {
+            transform: rotate(-10deg);
+        }
+
+        60% {
+            transform: rotate(5deg);
+        }
+
+        80% {
+            transform: rotate(-5deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+    img {
+        animation: shake 0.75s infinite;
+        animation-delay: 2s;
+        transform-origin: center;
+    }
 }
 
 header {

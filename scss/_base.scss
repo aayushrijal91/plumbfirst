@@ -1,3 +1,11 @@
+@function imgUrl($file, $path: "background"){
+@return url("../images/" + $path + "/" + $file) no-repeat;
+}
+
+html {
+    overflow-x: hidden;
+}
+
 img {
     max-width: 100%;
 }
