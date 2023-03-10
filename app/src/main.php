@@ -6,7 +6,7 @@
                     <?= renderImg("logo.png", "logo", 'logo') ?>
                 </a>
             </div>
-            <div class="col-auto fs-20 font-roboto text-grey d-none d-md-block">Melbourne wide local and reliable Plumbing Services.</div>
+            <div class="col-auto fs-20 font-roboto text-grey d-none d-lg-block">Melbourne wide local and reliable Plumbing Services.</div>
             <div class="col-auto d-none d-md-block">
                 <a href="tel:<?= $phone_number ?>" class="btn btn-secondary rounded-0 text-white py-3 px-4 gap-1">
                     <div>
@@ -35,13 +35,13 @@
 <div class="container-fluid">
     <section class="banner">
         <div class="container">
-            <div class="text-center font-roboto text-primary-light fw-300 fs-14 pb-5 d-md-none">Melbourne wide local and reliable Plumbing Services.</div>
+            <div class="text-center font-roboto text-primary-light fw-300 fs-14 pb-5 d-lg-none">Melbourne wide local and reliable Plumbing Services.</div>
             <div class="text-center pb-2 d-none d-md-block">
                 <?= renderImg('awards-banner.png', 'lib') ?>
             </div>
             <div class="row justify-content-center">
                 <div class="col-auto d-md-none"><?= renderImg('pr-sm.png', 'lib') ?></div>
-                <div class="col-md-7">
+                <div class="col-lg-7">
                     <h1 class="heading fs-96 lh-1 fw-700 text-center py-3 py-md-4">On-Time Plumbers or We Pay You $100!*</h1>
                 </div>
                 <div class="col-12">
@@ -54,7 +54,7 @@
                     </div>
                 </div>
             </div>
-            <div class="d-md-none"><?= renderImg('van-sm.png', 'lib', 'w-100') ?></div>
+            <div class="text-center d-lg-none"><?= renderImg('van-sm.png', 'lib') ?></div>
             <div class="text-center d-none d-md-block">
                 <a href="tel:<?= $phone_number ?>" class="btn btn-secondary rounded-0 text-white py-3 px-4 gap-1 d-inline-flex">
                     <div>
@@ -67,8 +67,8 @@
             </div>
         </div>
         <div class="banner_guys">
-            <?= renderImg('banner-tradies.png', 'lib',  'd-none d-md-block') ?>
-            <?= renderImg('banner-guy-sm.png', 'lib', 'd-md-none') ?>
+            <?= renderImg('banner-tradies.png', 'lib',  'd-none d-lg-block') ?>
+            <?= renderImg('banner-guy-sm.png', 'lib', 'd-lg-none') ?>
         </div>
     </section>
 </div>
@@ -149,14 +149,14 @@
             <div class="col-xxl-9">
                 <div class="row justify-content-between crow">
                     <div class="col-lg-5">
-                        <h3 class="text-dark fs-72 fw-700 lh-1 mb-5 d-none d-md-block">4500+ loved their plumbfirst experience</h3>
+                        <h3 class="text-dark fs-72 fw-700 lh-1 mb-5 d-none d-lg-block">4500+ loved their plumbfirst experience</h3>
                         <div class="cta card rounded-0 border-0 mb-4 mb-md-5 bg-transparent ">
                             <div class="card-body p-0 position-relative">
                                 <span class="tag fw-700 fs-36 lh-1 bg-primary text-white d-inline-block py-1 ms-4 ps-2 pe-3 position-relative"><?= date('Y') ?> Product Review Winner</span>
                             </div>
                         </div>
-                        <h3 class="text-dark fs-72 fw-700 lh-1 text-center d-md-none">4500+ loved their plumbfirst experience</h3>
-                        <div class="text-center d-md-none pt-4 pb-5">
+                        <h3 class="text-dark fs-72 fw-700 lh-1 text-center d-lg-none">4500+ loved their plumbfirst experience</h3>
+                        <div class="text-center d-lg-none pt-4 pb-5">
                             <?= renderImg("cpr2.png", 'lib') ?>
 
                             <div class="row justify-content-center">
@@ -176,7 +176,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-auto text-white d-none d-md-block">
+                    <div class="col-lg-auto text-white d-none d-lg-block">
                         <div class="d-flex reviews h-100 cover">
                             <div class="me-2 left position-relative review">
                                 <div class="position-relative z-1 p-4">
@@ -287,8 +287,8 @@
     <section class="deals">
         <div class="container">
             <div class="fs-96 fw-700 text-center pb-5 pb-md-6 lh-1">You won't find better deals!</div>
-            <div class="row justify-content-center justify-content-lg-between gy-5 gy-md-0 gx-xl-8">
-                <div class="col-md-6 col-lg-4">
+            <div class="row justify-content-center justify-content-lg-between gy-5 gy-lg-0 gx-xl-8">
+                <div class="col-lg-4">
                     <div class="deals_card">
                         <div class="card_inner">
                             <div class="top d-flex align-items-center">
@@ -305,7 +305,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
+                <div class="col-lg-4">
                     <div class="deals_card">
                         <div class="card_inner">
                             <div class="top d-flex align-items-center">
@@ -324,7 +324,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
+                <div class="col-lg-4">
                     <div class="deals_card">
                         <div class="card_inner">
                             <div class="top d-flex align-items-center">
@@ -349,11 +349,11 @@
 
 <section class="brands">
     <div class="container">
-        <div class="row align-items-center gy-5 gy-md-0">
-            <div class="col-lg-3">
+        <div class="row gy-5 gy-lg-0">
+            <div class="col-md-6 col-lg-3 d-flex align-items-center">
                 <div class="heading fs-64 lh-0_8 text-primary fw-700">We put homes first. Discover our other brands.</div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-md-6 col-lg-3">
                 <div class="brands_card">
                     <?= renderImg('plumbfirst.png', 'lib') ?>
                     <div class="fs-18 text-tertiary py-4">
@@ -362,7 +362,7 @@
                     <a href="#form" class="btn btn-primary text-white rounded-10 w-100 lh-1 fw-600 font-roboto fs-18">Learn more</a>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-md-6 col-lg-3">
                 <div class="brands_card">
                     <?= renderImg('elecfirst.png', 'lib') ?>
                     <div class="fs-18 text-tertiary py-4">
@@ -371,7 +371,7 @@
                     <a href="#form" class="btn btn-primary text-white rounded-10 w-100 lh-1 fw-600 font-roboto fs-18">Learn more</a>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-md-6 col-lg-3">
                 <div class="brands_card">
                     <?= renderImg('comfyfirst.png', 'lib') ?>
                     <div class="fs-18 text-tertiary py-4">
@@ -386,10 +386,14 @@
 
 <div class="container-fluid">
     <footer>
-        <div class="container pt-5 pt-md-9 pb-2 text-center">
-            <a href="./" class="text-center">
-                <?= renderImg("logo.png", "logo") ?>
-            </a>
+        <div class="container pt-5 pt-md-7 pt-lg-9 pb-2 text-center">
+            <div class="row justify-content-center">
+                <div class="col-9 col-md-6 col-lg-12">
+                    <a href="./" class="text-center">
+                        <?= renderImg("logo.png", "logo") ?>
+                    </a>
+                </div>
+            </div>
             <div class="row justify-content-center py-4">
                 <div class="col-xl-10 text-center heading fs-72 fw-700 lh-1">Experience First Class Plumbing Services with PlumbFirst Melbourne</div>
             </div>
@@ -404,8 +408,8 @@
         </div>
         <div class="accreditation">
             <div class="container">
-                <div class="row align-items-center gy-5 gy-md-0">
-                    <div class="col-md-6 heading fs-36 fw-700 text-center text-md-start lh-1">
+                <div class="row align-items-center gy-5 gy-lg-0">
+                    <div class="col-lg-6 heading fs-36 fw-700 text-center text-lg-start lh-1">
                         Accredited &amp; Fully Licensed Plumbers
                     </div>
                     <div class="col">
@@ -422,7 +426,7 @@
             </div>
         </div>
         <div class="container pt-3 pb-4">
-            <div class="row justify-content-between align-items-center gy-3 gy-md-0">
+            <div class="row justify-content-between align-items-center gy-3 gy-lg-0">
                 <div class="col-auto">
                     <div class="row justify-content-center align-items-center gy-3 gy-md-0">
                         <div class="col-5 col-md-auto">
@@ -430,12 +434,12 @@
                                 <?= renderImg("logo.png", "logo", 'logo') ?>
                             </a>
                         </div>
-                        <div class="col-12 col-md-auto tagline fs-24 fw-600 text-center">On-time Melbourne Plumbers or We Pay You $100!*</div>
+                        <div class="col-12 col-lg-auto tagline fs-24 fw-600 text-center">On-time Melbourne Plumbers or We Pay You $100!*</div>
                     </div>
                 </div>
 
-                <div class="col-md-auto font-roboto">
-                    <div class="row align-items-center justify-content-between">
+                <div class="col-lg-auto font-roboto">
+                    <div class="row align-items-center justify-content-between justify-content-md-center">
                         <div class="col-auto d-flex gap-2 align-items-center">
                             <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M3.02293 16.5031L3 9.50305H0V6.50305H3V4.50305C3 1.80385 4.67151 0.503052 7.07938 0.503052C8.23277 0.503052 9.22406 0.588922 9.51294 0.627302V3.44812L7.84296 3.44888C6.53343 3.44888 6.27987 4.07115 6.27987 4.98429V6.50305H10L9 9.50305H6.27986V16.5031H3.02293Z" fill="#F05325" />
@@ -451,7 +455,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center justify-content-md-between align-items-center pt-5 pt-md-0 gy-3 gy-md-0">
+            <div class="row justify-content-center justify-content-md-between align-items-center pt-5 pt-lg-0 gy-3 gy-md-0">
                 <div class="col-auto font-roboto text-tertiary copyright">
                     <span>Copyright <?= date('Y') ?></span>
                     <span class="text-secondary px-2 px-xl-5">/</span>

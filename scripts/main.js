@@ -30,6 +30,7 @@ $('.slidert').slick({
         breakpoint: 1200,
         settings: {
             slidesToShow: 2,
+            centerPadding: "20px"
         }
     },
     {
