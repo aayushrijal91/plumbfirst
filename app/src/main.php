@@ -6,7 +6,7 @@
                     <?= renderImg("logo.png", "logo", 'logo') ?>
                 </a>
             </div>
-            <div class="col-auto fs-20 font-roboto text-grey d-none d-lg-block">Melbourne wide local and reliable Plumbing Services.</div>
+            <div class="col-auto fs-20 font-roboto text-grey d-none d-xl-block">Melbourne wide local and reliable Plumbing Services.</div>
             <div class="col-auto d-none d-md-block">
                 <a href="tel:<?= $phone_number ?>" class="btn btn-secondary rounded-0 text-white py-3 px-4 gap-1">
                     <div>
@@ -36,12 +36,13 @@
     <section class="banner">
         <div class="container">
             <div class="text-center font-roboto text-primary-light fw-300 fs-14 pb-5 d-lg-none">Melbourne wide local and reliable Plumbing Services.</div>
+            <div class="text-center fs-20 font-roboto text-primary-light pb-5 d-none d-lg-block d-xl-none">Melbourne wide local and reliable Plumbing Services.</div>
             <div class="text-center pb-2 d-none d-md-block">
                 <?= renderImg('awards-banner.png', 'lib') ?>
             </div>
             <div class="row justify-content-center">
                 <div class="col-auto d-md-none"><?= renderImg('pr-sm.png', 'lib') ?></div>
-                <div class="col-lg-7">
+                <div class="col-xl-7">
                     <h1 class="heading fs-96 lh-1 fw-700 text-center py-3 py-md-4">On-Time Plumbers or We Pay You $100!*</h1>
                 </div>
                 <div class="col-12">
@@ -54,7 +55,7 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center d-lg-none"><?= renderImg('van-sm.png', 'lib') ?></div>
+            <div class="text-center d-xl-none"><?= renderImg('van-sm.png', 'lib') ?></div>
             <div class="text-center d-none d-md-block">
                 <a href="tel:<?= $phone_number ?>" class="btn btn-secondary rounded-0 text-white py-3 px-4 gap-1 d-inline-flex">
                     <div>
@@ -76,7 +77,7 @@
 <section class="services">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-10">
+            <div class="col-xl-10">
                 <h2 class="text-primary fs-48 fw-700 text-center">We've got <span class="text-secondary">ALL your plumbing needs</span> covered!</h2>
                 <div class="text-center d-md-none pt-4">
                     <a href="tel:<?= $phone_number ?>" class="btn btn-secondary rounded-0 text-white py-3 px-4 gap-1 d-inline-flex">
@@ -89,7 +90,7 @@
                     </a>
                 </div>
                 <div class="text-center fs-18 pt-4 pb-5 pb-md-6 font-dmsans text-black fw-500">Our workmanship & dedication has propelled us in becoming a huge successful business with over 150 vehicles on the road daily & over 200 staff</div>
-                <div class="row g-md-5" id="services_slider">
+                <div class="row g-md-5 g-lg-4 g-xl-5" id="services_slider">
                     <?php $services = array(
                         [
                             'image' => 'blocked-drains.jpg',
@@ -287,8 +288,8 @@
     <section class="deals">
         <div class="container">
             <div class="fs-96 fw-700 text-center pb-5 pb-md-6 lh-1">You won't find better deals!</div>
-            <div class="row justify-content-center justify-content-lg-between gy-5 gy-lg-0 gx-xl-8">
-                <div class="col-lg-4">
+            <div class="row justify-content-center justify-content-xl-between gy-5 gy-xl-0 gx-xl-8">
+                <div class="col-lg-6 col-xl-4">
                     <div class="deals_card">
                         <div class="card_inner">
                             <div class="top d-flex align-items-center">
@@ -305,7 +306,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-6 col-xl-4">
                     <div class="deals_card">
                         <div class="card_inner">
                             <div class="top d-flex align-items-center">
@@ -324,7 +325,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-6 col-xl-4">
                     <div class="deals_card">
                         <div class="card_inner">
                             <div class="top d-flex align-items-center">
@@ -349,11 +350,11 @@
 
 <section class="brands">
     <div class="container">
-        <div class="row gy-5 gy-lg-0">
-            <div class="col-md-6 col-lg-3 d-flex align-items-center">
+        <div class="row gy-5 gy-xl-0">
+            <div class="col-md-6 col-xl-3 d-flex align-items-center">
                 <div class="heading fs-64 lh-0_8 text-primary fw-700">We put homes first. Discover our other brands.</div>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-xl-3">
                 <div class="brands_card">
                     <?= renderImg('plumbfirst.png', 'lib') ?>
                     <div class="fs-18 text-tertiary py-4">
@@ -362,7 +363,7 @@
                     <a href="#form" class="btn btn-primary text-white rounded-10 w-100 lh-1 fw-600 font-roboto fs-18">Learn more</a>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-xl-3">
                 <div class="brands_card">
                     <?= renderImg('elecfirst.png', 'lib') ?>
                     <div class="fs-18 text-tertiary py-4">
@@ -371,7 +372,7 @@
                     <a href="#form" class="btn btn-primary text-white rounded-10 w-100 lh-1 fw-600 font-roboto fs-18">Learn more</a>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-xl-3">
                 <div class="brands_card">
                     <?= renderImg('comfyfirst.png', 'lib') ?>
                     <div class="fs-18 text-tertiary py-4">
@@ -388,7 +389,7 @@
     <footer>
         <div class="container pt-5 pt-md-7 pt-lg-9 pb-2 text-center">
             <div class="row justify-content-center">
-                <div class="col-9 col-md-6 col-lg-12">
+                <div class="col-9 col-md-6 col-lg-5 col-xl-12">
                     <a href="./" class="text-center">
                         <?= renderImg("logo.png", "logo") ?>
                     </a>
@@ -408,8 +409,8 @@
         </div>
         <div class="accreditation">
             <div class="container">
-                <div class="row align-items-center gy-5 gy-lg-0">
-                    <div class="col-lg-6 heading fs-36 fw-700 text-center text-lg-start lh-1">
+                <div class="row align-items-center gy-5 gy-xl-0">
+                    <div class="col-xl-6 heading fs-36 fw-700 text-center text-xl-start lh-1">
                         Accredited &amp; Fully Licensed Plumbers
                     </div>
                     <div class="col">
@@ -426,19 +427,19 @@
             </div>
         </div>
         <div class="container pt-3 pb-4">
-            <div class="row justify-content-between align-items-center gy-3 gy-lg-0">
-                <div class="col-auto">
+            <div class="row justify-content-between align-items-center gy-3 gy-xl-0">
+                <div class="col-auto col-lg-12 col-xl-auto">
                     <div class="row justify-content-center align-items-center gy-3 gy-md-0">
                         <div class="col-5 col-md-auto">
                             <a href="./" class="text-center">
                                 <?= renderImg("logo.png", "logo", 'logo') ?>
                             </a>
                         </div>
-                        <div class="col-12 col-lg-auto tagline fs-24 fw-600 text-center">On-time Melbourne Plumbers or We Pay You $100!*</div>
+                        <div class="col-12 col-xl-auto tagline fs-24 fw-600 text-center">On-time Melbourne Plumbers or We Pay You $100!*</div>
                     </div>
                 </div>
 
-                <div class="col-lg-auto font-roboto">
+                <div class="col-xl-auto font-roboto">
                     <div class="row align-items-center justify-content-between justify-content-md-center">
                         <div class="col-auto d-flex gap-2 align-items-center">
                             <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -455,7 +456,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center justify-content-md-between align-items-center pt-5 pt-lg-0 gy-3 gy-md-0">
+            <div class="row justify-content-center justify-content-md-between align-items-center pt-5 pt-xl-0 gy-3 gy-md-0">
                 <div class="col-auto font-roboto text-tertiary copyright">
                     <span>Copyright <?= date('Y') ?></span>
                     <span class="text-secondary px-2 px-xl-5">/</span>
