@@ -14,7 +14,7 @@
                         <div class="fs-12 fw-600 lh-0_8">service</div>
                     </div>
                     <div class="animated-call-button"><?= renderImg('call-button.png', 'icons') ?></div>
-                    <div class="fs-20 fw-700"><?= $phone_number ?></div>
+                    <div class="fs-27 fw-600"><?= $phone_number ?></div>
                 </a>
             </div>
             <div class="col-auto d-md-none">
