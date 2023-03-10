@@ -77,7 +77,7 @@
 <section class="services">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-xl-10">
+            <div class="col-xl-11 col-xxl-10">
                 <h2 class="text-primary fs-48 fw-700 text-center">We've got <span class="text-secondary">ALL your plumbing needs</span> covered!</h2>
                 <div class="text-center d-md-none pt-4">
                     <a href="tel:<?= $phone_number ?>" class="btn btn-secondary rounded-0 text-white py-3 px-4 gap-1 d-inline-flex">
@@ -288,7 +288,7 @@
     <section class="deals">
         <div class="container">
             <div class="fs-96 fw-700 text-center pb-5 pb-md-6 lh-1">You won't find better deals!</div>
-            <div class="row justify-content-center justify-content-xl-between gy-5 gy-xl-0 gx-xl-8">
+            <div class="row justify-content-center justify-content-xl-between gy-5 gy-xl-0 gx-xxl-8">
                 <div class="col-lg-6 col-xl-4">
                     <div class="deals_card">
                         <div class="card_inner">

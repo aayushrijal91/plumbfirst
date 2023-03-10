@@ -20,29 +20,31 @@ $('.slidert').slick({
     centerPadding: "320px",
     autoplay: true,
     autoplaySpeed: 3000,
-    responsive: [{
-        breakpoint: 1400,
-        settings: {
-            slidesToShow: 3,
-        }
-    },
-    {
-        breakpoint: 1200,
-        settings: {
-            slidesToShow: 2,
-            centerPadding: "20px"
-        }
-    },
-    {
-        breakpoint: 768,
-        settings: {
-            slidesToShow: 1,
-            centerPadding: "60px",
-        }
-    }]
+    responsive: [
+        {
+            breakpoint: 1600,
+            settings: {
+                centerPadding: "100px",
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 2,
+                centerPadding: "20px"
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                centerPadding: "60px",
+            }
+        }]
 });
 
-if($(document).width() <= 540) {
+if ($(document).width() <= 540) {
     $("#services_slider").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
