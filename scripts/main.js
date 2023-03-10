@@ -36,10 +36,26 @@ $('.slidert').slick({
         breakpoint: 768,
         settings: {
             slidesToShow: 1,
-            centerMode: false,
+            centerPadding: "60px",
         }
     }]
 });
+
+if($(document).width() <= 540) {
+    $("#services_slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        centerMode: true,
+        centerPadding: "20px"
+    });
+
+    $("#license_slider").slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: false,
+    });
+}
 
 function setTime() {
     const now = new Date();
