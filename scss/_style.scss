@@ -90,6 +90,14 @@ section.services {
             object-fit: cover;
         }
 
+        .thumbnail {
+            iframe {
+                width: 100%;
+                border-radius: 15px;
+                height: 248px;
+            }
+        }
+
         @include media-breakpoint-down(sm) {
             .title {
                 font-size: 1rem !important;
@@ -187,6 +195,13 @@ section.testimonials {
     }
 
     .slick-slide {
+        @include media-breakpoint-down(sm) {
+            &.slick-current.slick-active {
+                margin-top: 93px;
+                transition: 0.2s all;
+            }
+        }
+
         .card-o {
             min-height: 480px;
 
@@ -275,6 +290,7 @@ footer {
 
     @include media-breakpoint-up(md) {
         border-radius: 46px;
+        margin-bottom: 64px;
     }
 
     @include media-breakpoint-down(sm) {

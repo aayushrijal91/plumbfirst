@@ -113,18 +113,6 @@
         ]
     ); ?>
 
-    <?php foreach ($services as $key => $service) : ?>
-        <div class="modal fade" id="videoModal-<?= $key ?>" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <iframe id="video-<?= $key ?>" class="video-modal" src="<?= $service['embed'] ?>" title="<?= $service['title'] ?>" autoplay="true" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    <?php endforeach; ?>
-
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-11 col-xxl-10">
@@ -133,10 +121,12 @@
                 <div class="row g-md-5 g-lg-4 g-xl-5" id="services_slider">
                     <?php foreach ($services as $key => $service) : ?>
                         <div class="col-md-6 col-lg-4">
-                            <button type="button" class="service_card" data-bs-toggle="modal" data-bs-target="#videoModal-<?= $key ?>">
-                                <?= renderImg($service['image'], 'lib') ?>
+                            <div class="service_card">
+                                <div class="thumbnail">
+                                    <iframe id="video-<?= $key ?>" class="video-modal" src="<?= $key == 0 ? $service['embed'] . '?autoplay=1' : $service['embed'] ?>" title="<?= $service['title'] ?>" autoplay="true" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allow="autoplay" allowfullscreen></iframe>
+                                </div>
                                 <div class="title fs-27 font-dmsans fw-700 pt-4 lh-1"><?= $service['title'] ?></div>
-                            </button>
+                            </div>
                         </div>
                     <?php endforeach; ?>
                 </div>
