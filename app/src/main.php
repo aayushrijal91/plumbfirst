@@ -123,7 +123,7 @@
                         <div class="col-md-6 col-lg-4">
                             <div class="service_card">
                                 <div class="thumbnail">
-                                    <iframe id="video-<?= $key ?>" class="video-modal" src="<?= $key == 0 ? $service['embed'] . '?autoplay=1' : $service['embed'] ?>" title="<?= $service['title'] ?>" autoplay="true" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allow="autoplay" allowfullscreen></iframe>
+                                    <iframe id="video-<?= $key ?>" class="video-modal" src="<?= $key == 0 ? $service['embed'] . '?autoplay=1&mute=1' : $service['embed'] ?>" title="<?= $service['title'] ?>" autoplay="true" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
                                 <div class="title fs-27 font-dmsans fw-700 pt-4 lh-1"><?= $service['title'] ?></div>
                             </div>
