@@ -75,67 +75,68 @@
 </div>
 
 <section class="services">
+    <?php $services = array(
+        [
+            'image' => 'blocked-drains.jpg',
+            'title' => 'Blocked Drains',
+            'embed' => 'https://www.youtube.com/embed/I-wmPXd5dyA'
+        ],
+        [
+            'image' => 'gas-plumbing.jpg',
+            'title' => 'Gas Plumbing',
+            'embed' => 'https://www.youtube.com/embed/ZZENR5rjLdI'
+        ],
+        [
+            'image' => 'hot-water-service.jpg',
+            'title' => 'Hot Water Service',
+            'embed' => 'https://www.youtube.com/embed/lPbSxlBIz2Q'
+        ],
+        // [
+        //     'image' => 'pipe-relining.jpg',
+        //     'title' => 'Pipe Relining',
+        //     'embed' => ''
+        // ],
+        [
+            'image' => 'emergency-plumbing.jpg',
+            'title' => 'Emergency Plumbing',
+            'embed' => 'https://www.youtube.com/embed/2Cb_bcdc350'
+        ],
+        [
+            'image' => 'general-plumbing.jpg',
+            'title' => 'General Plumbing',
+            'embed' => 'https://www.youtube.com/embed/2Cb_bcdc350'
+        ],
+        [
+            'image' => 'renovations.jpg',
+            'title' => 'Renovations',
+            'embed' => 'https://www.youtube.com/embed/nV2Myh1Aq1k'
+        ]
+    ); ?>
+
+    <?php foreach ($services as $key => $service) : ?>
+        <div class="modal fade" id="videoModal-<?= $key ?>" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <iframe id="video-<?= $key ?>" class="video-modal" src="<?= $service['embed'] ?>" title="<?= $service['title'] ?>" autoplay="true" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <?php endforeach; ?>
+
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-11 col-xxl-10">
                 <h2 class="text-primary fs-48 fw-700 text-center">We've got <span class="text-secondary">ALL your plumbing needs</span> covered!</h2>
-                <div class="text-center d-md-none pt-4">
-                    <a href="tel:<?= $phone_number ?>" class="btn btn-secondary rounded-0 text-white py-3 px-4 gap-1 d-inline-flex">
-                        <div>
-                            <div class="fs-20 fw-600 lh-0_8">24/7</div>
-                            <div class="fs-12 fw-600 lh-0_8">service</div>
-                        </div>
-                        <div class="animated-call-button"><?= renderImg('call-button.png', 'icons') ?></div>
-                        <div class="fs-20 fw-700"><?= $phone_number ?></div>
-                    </a>
-                </div>
                 <div class="text-center fs-18 pt-4 pb-5 pb-md-6 font-dmsans text-black fw-500">Our workmanship & dedication has propelled us in becoming a huge successful business with over 150 vehicles on the road daily & over 200 staff</div>
                 <div class="row g-md-5 g-lg-4 g-xl-5" id="services_slider">
-                    <?php $services = array(
-                        [
-                            'image' => 'blocked-drains.jpg',
-                            'title' => 'Blocked Drains'
-                        ],
-                        [
-                            'image' => 'gas-plumbing.jpg',
-                            'title' => 'Gas Plumbing'
-                        ],
-                        [
-                            'image' => 'hot-water-service.jpg',
-                            'title' => 'Hot Water Service'
-                        ],
-                        [
-                            'image' => 'pipe-relining.jpg',
-                            'title' => 'Pipe Relining'
-                        ],
-                        [
-                            'image' => 'emergency-plumbing.jpg',
-                            'title' => 'Emergency Plumbing'
-                        ],
-                        [
-                            'image' => 'general-plumbing.jpg',
-                            'title' => 'General Plumbing'
-                        ],
-                        [
-                            'image' => 'commercial-plumbing.jpg',
-                            'title' => 'Commercial Plumbing'
-                        ],
-                        [
-                            'image' => 'real-estate.jpg',
-                            'title' => 'Real Estate &<br>Strata Plumbing'
-                        ],
-                        [
-                            'image' => 'renovations.jpg',
-                            'title' => 'Renovations'
-                        ]
-                    ); ?>
-
-                    <?php foreach ($services as $service) : ?>
+                    <?php foreach ($services as $key => $service) : ?>
                         <div class="col-md-6 col-lg-4">
-                            <div class="service_card">
+                            <button type="button" class="service_card" data-bs-toggle="modal" data-bs-target="#videoModal-<?= $key ?>">
                                 <?= renderImg($service['image'], 'lib') ?>
                                 <div class="title fs-27 font-dmsans fw-700 pt-4 lh-1"><?= $service['title'] ?></div>
-                            </div>
+                            </button>
                         </div>
                     <?php endforeach; ?>
                 </div>
@@ -485,4 +486,14 @@
             </div>
         </div>
     </footer>
+</div>
+<div class="sticky-button text-center d-md-none">
+    <a href="tel:<?= $phone_number ?>" class="btn btn-secondary rounded-0 text-white py-3 px-4 gap-3">
+        <div>
+            <div class="fs-20 fw-600 lh-0_8">24/7</div>
+            <div class="fs-12 fw-600 lh-0_8">service</div>
+        </div>
+        <div class="animated-call-button"><?= renderImg('call-button.png', 'icons') ?></div>
+        <div class="fs-20 fw-700"><?= $phone_number ?></div>
+    </a>
 </div>

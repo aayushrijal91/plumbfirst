@@ -1,43 +1,5 @@
-.animated-call-button {
-    @keyframes shake {
-        0% {
-            transform: rotate(0deg);
-        }
-
-        20% {
-            transform: rotate(10deg);
-        }
-
-        40% {
-            transform: rotate(-10deg);
-        }
-
-        60% {
-            transform: rotate(5deg);
-        }
-
-        80% {
-            transform: rotate(-5deg);
-        }
-
-        100% {
-            transform: rotate(0deg);
-        }
-    }
-
-    img {
-        animation: shake 0.75s infinite;
-        animation-delay: 2s;
-        transform-origin: center;
-    }
-}
-
 header {
-    padding: 69px 0 22px;
-
-    @include media-breakpoint-up(md) {
-        padding: 39px 21px;
-    }
+    padding: 39px 21px;
 
     .logo {
         max-width: 270px;
@@ -118,6 +80,8 @@ section.services {
         border-radius: 15px;
         padding: 25px 24px;
         height: 100%;
+        color: $dark;
+        width: 100%;
 
         img {
             border-radius: 15px;
@@ -307,7 +271,7 @@ footer {
     border-radius: 25px;
     background-color: $primary;
     color: $white;
-    margin-bottom: 57px;
+    margin-bottom: 80px;
 
     @include media-breakpoint-up(md) {
         border-radius: 46px;
