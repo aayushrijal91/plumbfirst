@@ -39,7 +39,7 @@ $('.slidert').slick({
             breakpoint: 768,
             settings: {
                 slidesToShow: 1,
-                centerPadding: "60px",
+                centerPadding: "30px",
             }
         }]
 });

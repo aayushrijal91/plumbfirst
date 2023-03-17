@@ -6,10 +6,10 @@ $sitetitle = "";
 $title = !empty($sitetitle) ? $titlename : $site;
 $reviewn = 3283;
 
-$phone_number = "1300 174 890";
-$admin_email = 'arijal@aiims.com.au';
+$phone_number = "0485 815 232";
+$admin_email = 'info@plumbfirst.com.au';
 $bcc_email = "";
-$no_reply_email = 'info@website.com.au';
+$no_reply_email = 'info@plumbfirst.com.au';
 $recaptcha_client_secret = $client_secret;
 $recaptcha_server_secret = $server_secret;
 
