@@ -353,9 +353,17 @@
 
 <section class="brands">
     <div class="container">
-        <div class="row gy-5 gy-xl-0">
-            <div class="col-md-6 col-xl-3 d-flex align-items-center">
-                <div class="heading fs-64 lh-0_8 text-primary fw-700">We put homes first. Discover our other brands.</div>
+        <div class="text-center heading fs-64 lh-0_8 text-primary fw-700">We put homes first. Discover our other brands.</div>
+
+        <div class="row gy-5 gy-xl-0 pt-6">
+            <div class="col-md-6 col-xl-3">
+                <div class="brands_card">
+                    <?= renderImg('homefirst.png', 'lib') ?>
+                    <div class="fs-18 text-tertiary py-4">
+                    Homefirst offers comprehensive repair and maintenance services for homes. Their skilled professionals offer a wide range of services.
+                    </div>
+                    <a href="./" class="btn btn-primary text-white rounded-10 w-100 lh-1 fw-600 font-roboto fs-18">Learn more</a>
+                </div>
             </div>
             <div class="col-md-6 col-xl-3">
                 <div class="brands_card">
