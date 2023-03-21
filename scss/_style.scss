@@ -5,6 +5,17 @@ header {
         max-width: 270px;
         width: 100%;
     }
+
+    .mobile-call-button {
+        position: fixed;
+        top: 56px;
+        right: 34px;
+        z-index: 1000;
+        
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
+    }
 }
 
 section.banner {

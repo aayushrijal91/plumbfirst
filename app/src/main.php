@@ -6,7 +6,10 @@
                     <?= renderImg("logo.png", "logo", 'logo') ?>
                 </a>
             </div>
-            <div class="col-auto fs-20 font-roboto text-grey d-none d-xl-block">Melbourne wide local and reliable Plumbing Services.</div>
+            <div class="col-auto font-roboto text-center text-grey d-none d-xl-block">
+                <a href="https://homefirstservices.com.au/" target="_blank" class="text-decoration-none fs-24 text-grey fw-600">Division of HomeFirst Services</a>
+                <div class="fs-18">Melbourne wide local and reliable Plumbing Services.</div>
+            </div>
             <div class="col-auto d-none d-md-block">
                 <a href="tel:<?= $phone_number ?>" class="btn btn-secondary rounded-0 text-white py-3 px-4 gap-3">
                     <div>
@@ -27,6 +30,10 @@
                         <div class="">We're Open!</div>
                     </div>
                 </div>
+
+                <div class="text-end pt-4 mobile-call-button">
+                    <a href="tel:<?= $phone_number ?>"><?= renderImg('call-button.png', 'icons') ?></a>
+                </div>
             </div>
         </div>
     </div>
@@ -35,7 +42,10 @@
 <div class="container-fluid">
     <section class="banner">
         <div class="container">
-            <div class="text-center font-roboto text-primary-light fw-300 fs-14 pb-5 d-lg-none">Melbourne wide local and reliable Plumbing Services.</div>
+            <div class="text-center font-roboto pb-5 d-lg-none">
+                <a href="https://homefirstservices.com.au/" target="_blank" class="text-decoration-none fs-18 fw-600 text-primary-light">Division of HomeFirst Services</a>
+                <div class="text-primary-light fw-300 fs-14">Melbourne wide local and reliable Plumbing Services.</div>
+            </div>
             <div class="text-center fs-20 font-roboto text-primary-light pb-5 d-none d-lg-block d-xl-none">Melbourne wide local and reliable Plumbing Services.</div>
             <div class="text-center pb-2 d-none d-md-block">
                 <?= renderImg('awards-banner.png', 'lib') ?>
@@ -144,7 +154,7 @@
                         <h3 class="text-dark fs-72 fw-700 lh-1 mb-5 d-none d-lg-block">4500+ loved<br class="d-none d-xl-block"> their plumbfirst experience</h3>
                         <div class="cta card rounded-0 border-0 mb-4 mb-md-5 bg-transparent ">
                             <div class="card-body p-0 position-relative">
-                                <span class="tag fw-700 fs-36 lh-1 bg-primary text-white d-inline-block py-1 ms-4 ps-2 pe-3 position-relative"><?= date('Y') ?> Product Review Winner</span>
+                                <span class="tag fw-700 fs-30 lh-1 bg-primary text-white d-inline-block py-1 ms-4 ps-2 pe-3 position-relative">2021, 2022 & 2023 Product Review Winner</span>
                             </div>
                         </div>
                         <h3 class="text-dark fs-72 fw-700 lh-1 text-center d-lg-none">4500+ loved their plumbfirst experience</h3>
@@ -353,7 +363,7 @@
                     <div class="fs-18 text-tertiary py-4">
                         There for all your plumbing needs like blocked drains, hot water systems, and gas services.
                     </div>
-                    <a href="#form" class="btn btn-primary text-white rounded-10 w-100 lh-1 fw-600 font-roboto fs-18">Learn more</a>
+                    <a href="./" class="btn btn-primary text-white rounded-10 w-100 lh-1 fw-600 font-roboto fs-18">Learn more</a>
                 </div>
             </div>
             <div class="col-md-6 col-xl-3">
@@ -362,7 +372,7 @@
                     <div class="fs-18 text-tertiary py-4">
                         What’s a home without power? ElecFirst offers all electrical services like lighting, switchboards and rewiring.
                     </div>
-                    <a href="#form" class="btn btn-primary text-white rounded-10 w-100 lh-1 fw-600 font-roboto fs-18">Learn more</a>
+                    <a href="https://www.elecfirst.com.au/" target="_blank" class="btn btn-primary text-white rounded-10 w-100 lh-1 fw-600 font-roboto fs-18">Learn more</a>
                 </div>
             </div>
             <div class="col-md-6 col-xl-3">
@@ -371,7 +381,7 @@
                     <div class="fs-18 text-tertiary py-4">
                         Turn up the heat or chill down with ComfyFirst. Offering air conditioning, heating, repairs and maintenance services.
                     </div>
-                    <a href="#form" class="btn btn-primary text-white rounded-10 w-100 lh-1 fw-600 font-roboto fs-18">Learn more</a>
+                    <a href="https://comfyfirstmelbourne.com.au/" target="_blank" class="btn btn-primary text-white rounded-10 w-100 lh-1 fw-600 font-roboto fs-18">Learn more</a>
                 </div>
             </div>
         </div>
@@ -463,10 +473,14 @@
             <div class="row justify-content-center justify-content-md-between align-items-center pt-5 pt-xl-3 gy-3 gy-md-0">
                 <div class="col-auto font-roboto text-tertiary copyright">
                     <span>Copyright <?= date('Y') ?></span>
-                    <span class="text-secondary px-2 px-xl-5">/</span>
+                    <span class="text-secondary px-2 px-xl-4">/</span>
                     <span><?= $site ?></span>
-                    <span class="text-secondary px-2 px-xl-5">/</span>
+                    <span class="text-secondary px-2 px-xl-4">/</span>
                     <span>All Rights Reserved</span>
+                    <span class="text-secondary px-2 px-xl-4">/</span>
+                    <span>Lic 51787</span>
+                    <span class="text-secondary px-2 px-xl-4">/</span>
+                    <span>Division of HomeFirst Services</span>
                 </div>
                 <div class="col-auto">
                     <a href="https://www.aiims.com.au/like-our-work/" target="_blank">
