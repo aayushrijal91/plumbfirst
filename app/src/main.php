@@ -362,7 +362,7 @@
                     <div class="fs-18 text-tertiary py-4">
                     Homefirst offers comprehensive repair and maintenance services for homes. Their skilled professionals offer a wide range of services.
                     </div>
-                    <a href="./" class="btn btn-primary text-white rounded-10 w-100 lh-1 fw-600 font-roboto fs-18">Learn more</a>
+                    <a href="https://homefirstservices.com.au/" class="btn btn-primary text-white rounded-10 w-100 lh-1 fw-600 font-roboto fs-18">Learn more</a>
                 </div>
             </div>
             <div class="col-md-6 col-xl-3">
@@ -488,7 +488,7 @@
                     <span class="text-secondary px-2 px-xl-4">/</span>
                     <span>Lic 51787</span>
                     <span class="text-secondary px-2 px-xl-4">/</span>
-                    <span>Division of HomeFirst Services</span>
+                    <span><a href="https://homefirstservices.com.au/" target="_blank" class="text-decoration-none text-white">Division of HomeFirst Services</a></span>
                 </div>
                 <div class="col-auto">
                     <a href="https://www.aiims.com.au/like-our-work/" target="_blank">
