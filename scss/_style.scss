@@ -322,6 +322,10 @@ footer {
 
     .btn {
         height: 91px;
+
+        @include media-breakpoint-down(sm) {
+            height: 64px;
+        }
     }
 
     .accreditation {

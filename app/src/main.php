@@ -360,7 +360,7 @@
                 <div class="brands_card">
                     <?= renderImg('homefirst.png', 'lib') ?>
                     <div class="fs-18 text-tertiary py-4">
-                    Homefirst offers comprehensive repair and maintenance services for homes. Their skilled professionals offer a wide range of services.
+                        Homefirst offers comprehensive repair and maintenance services for homes. Their skilled professionals offer a wide range of services.
                     </div>
                     <a href="https://homefirstservices.com.au/" class="btn btn-primary text-white rounded-10 w-100 lh-1 fw-600 font-roboto fs-18">Learn more</a>
                 </div>
@@ -409,8 +409,13 @@
             <div class="row justify-content-center py-4">
                 <div class="col-xl-10 text-center heading fs-72 fw-700 lh-1">Experience First Class Plumbing Services with PlumbFirst Melbourne</div>
             </div>
-            <div class="text-center py-4 d-none d-md-inline-block">
-                <a href="tel:<?= $phone_number ?>" class="btn btn-dark text-white rounded-3 fs-30 fw-600 px-4">Call <?= $phone_number ?></a>
+            <div class="row justify-content-center py-4">
+                <div class="col-auto d-none d-md-block">
+                    <a href="tel:<?= $phone_number ?>" class="btn btn-dark text-white rounded-3 fs-30 fw-600 px-4">Call <?= $phone_number ?></a>
+                </div>
+                <div class="col-auto">
+                <a href="https://plumbfirstmelbourne.com.au/payment/" target="_blank" class="btn btn-secondary fw-700 rounded-3 text-white px-4 fs-24 font-roboto px-5">Pay Online</a>
+                </div>
             </div>
         </div>
         <div class="accreditation">
